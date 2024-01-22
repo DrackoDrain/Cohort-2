@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar{
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-around;
+    /* box-shadow:  2px 2px rgb(38, 10, 10); */
+    box-shadow: 2px 1px 2px #eee;
+  
+    
+    
+}
+.logo, fjfj{
+    padding: 6px;
+    padding-top: 19px;
+    width: 2px;
+
+}
+
+.text{
+    color: #666;
+    display: flex;
+}
+
+.para{
+    padding: 20px;
+    /* justify-content: start; */
+    
+}
+
+.para:hover{
+    color: rgb(243, 176, 176);
+    cursor: pointer;
+   
+}
+
+.ZerodhaPage img{
+   width: 65%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 40px; 
+}
+
+.invest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50;
+}
+
+.invest h1{
+    font-size: 2.75rem;
+    line-height: 1.25;
+    font-weight: bold;
+    margin: 15;
+}
+
+.invest h1, h3 {
+    margin-top: 0px;
+    font-weight: 500;
+    letter-spacing: 1;
+    
+}
+
+.invest button {
+   
+    margin: 40;
+    padding: 18;
+    width: 170;
+    font-size: 20;
+    background-color: #387ed1;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,0) !important;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.invest button:hover{
+    background-color: black;
+}
+
