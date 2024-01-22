@@ -5,7 +5,7 @@ const app = express()
 
 // const port = 3001
 
-const port = process.env.PORT || 3006  // another type of 
+const port = process.env.PORT || 3006  // create environmental port
 
 app.use(bodyParser.json());
 
