@@ -3,11 +3,23 @@ const express = require("express")
 const zod = require("zod")
 const app = express();
 
- const schema = zod.array(zod.number());
+const schema = zod.array(zod.number());
+
+const schema1 = zod.object({
+    email: zod.string().email(),
+    password: zod.string(),
+    country: zod.literal("IN").or(zod.literal("US")),
+    kidneys: zod.array(zod.number())
+})
+
+
+
+
+
 
 app.use(express.json());
 
-app.post("/health-checkup1 ", function(req,res){
+app.post("/health-checkup1", function(req,res){
     // kidneys = [1,2]
 
     const kidneys = req.body.kidneys;
@@ -18,9 +30,12 @@ app.post("/health-checkup1 ", function(req,res){
         })
     }
     else{
-        res.json({
-          msg:"valid"
-        })       
+        // res.json({
+        //   msg:"valid"
+        // })   
+        res.send({
+            response
+        })    
     }
 });
 
