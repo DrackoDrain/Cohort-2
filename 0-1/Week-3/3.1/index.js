@@ -31,6 +31,8 @@ app.post("/health-checkup",  (req,res)=>{   // if not using global cathes use as
     
 })
 
+
+
 // global catches -> help you give the user a better error message 
 // it is also called Error Handeling Middleware : (err, req, res, next)
 app.use(function(err,req,res,next){
