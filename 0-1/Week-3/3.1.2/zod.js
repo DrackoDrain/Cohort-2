@@ -1,3 +1,5 @@
+// Zod - TypeScript first schema declaration and validation library
+
 const express = require("express")
 
 const zod = require("zod")
@@ -12,16 +14,9 @@ const schema1 = zod.object({
     kidneys: zod.array(zod.number())
 })
 
-
-
-
-
-
 app.use(express.json());
 
 app.post("/health-checkup1", function(req,res){
-    // kidneys = [1,2]
-
     const kidneys = req.body.kidneys;
     const response = schema.safeParse(kidneys)
     if(!response.success){
