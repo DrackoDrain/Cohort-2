@@ -1,5 +1,5 @@
 // Zod - TypeScript first schema declaration and validation library
-
+// go to web browser and searc
 const express = require("express")
 
 const zod = require("zod")
@@ -7,12 +7,12 @@ const app = express();
 
 const schema = zod.array(zod.number());
 
-const schema1 = zod.object({
-    email: zod.string().email(),
-    password: zod.string(),
-    country: zod.literal("IN").or(zod.literal("US")),
-    kidneys: zod.array(zod.number())
-})
+// const schema1 = zod.object({
+//     email: zod.string().email(),
+//     password: zod.string(),
+//     country: zod.literal("IN").or(zod.literal("US")),
+//     kidneys: zod.array(zod.number())
+// })
 
 app.use(express.json());
 
